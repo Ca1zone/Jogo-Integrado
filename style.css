@@ -77,3 +77,19 @@ font-weight: bold;
         background-color: white;
     }
 }
+
+.cntrl {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.controles {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    img{
+        width: 33%;
+    }
+}
