@@ -213,11 +213,31 @@ footer {
     background-color: rgb(0, 0, 0);
     padding: 20px;
     box-sizing: border-box;
+    text-decoration: none;
     img{
         width: 100px;
         padding-top: 10px;
     }
 }
+
+footer a {
+    text-decoration: none;
+    color: rgb(0, 255, 0);
+}
+
+.fost{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: rgb(0, 255, 0);
+   p {
+    padding: 10px;
+    color: rgb(0, 255, 0);
+    
+   }
+}
+
+
 
 .clearfix{
     clear: both;
@@ -226,7 +246,6 @@ footer {
 footer p {
     text-align: center;
 }
-
 
 
 
