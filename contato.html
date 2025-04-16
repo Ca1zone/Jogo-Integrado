@@ -31,36 +31,38 @@
         <h1>Formulário Cadastral</h1>
         <form id="form">
             <label>Nome:</label>
-            <input type="text" id="Nome">
+            <input type="text" id="nome" placeholder="Insira seu nome: ">
             <label>E-mail:</label>
-            <input type="email" id="email">
+            <input type="email" id="email" placeholder="Insira seu e-mail: ">
             <label>Telefone:</label>
-            <input type="text" id="Telefone">
+            <input type="text" id="telefone" placeholder="Insira seu telefone: ">
             <button type="button" id="botao">Enviar</button>
         </form>
         <script>
             document.getElementById('botao').onclick = function() {
-                var Nome = document.getElementById('nome').value;
+                var nome = document.getElementById('nome').value;
                 var email = document.getElementById('email').value;
-                var Telefone = document.getElementById('Telefone').value;
+                var telefone = document.getElementById('telefone').value;
 
-                if (nome == "" & email == "" & Telefone == "") {
+                let emailvalidacao = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+                if (nome == "" && email == "" && telefone == "") {
                     alert("Por favor, preencha todos os campos.")
                 }else{
-                    if(Nome == "") {
-                        alert("informe o nome");
-                    }
+                    if (nome == "") {
+            alert("Informe o nome completo");
+        } else if (email == "") {
+            alert("Informe o e-mail");
+        } else if (!emailvalidacao.test(email)) {
+            alert("Informe um email válido");
+        } else if (telefone == "") {
+            alert("Escreva a sua mensagem");
+        } else {
+            alert("Formulário enviado com sucesso!");
+        }
+    }
 
-                    if (email == "") {
-                        alert("inform o email");
-                    }
-
-                    if (Telefone == "") {
-                        alert("inform o telefone");
-                    }
-                }
-
-                if(Nome != "" && email != "" && Telefone != "" ) {
+                if(nome != "" && email != "" && telefone != "" && emailvalidacao.test(email)) {
                     alert("Formulário enviado com sucesso!");
                 }
             }
