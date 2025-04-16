@@ -169,11 +169,11 @@ button {
 
 .galeria1 {
     text-align: center;
-    justify-content: flex;
     .galeria11{
         padding: 10px;
         font-size: 60px;
-        font-family: serif
+        font-family: serif;
+        
     }
     img {
         margin: 50px;
