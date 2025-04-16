@@ -168,11 +168,31 @@ button {
         box-shadow: 0 0 10px rgb(47, 255, 57);
     }
 }
+.mainhome{ 
+    text-align: center;
+    background-color: white;
+}
 
+
+.aqq { 
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.homebutton {
+    background-color: #00ff00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    box-shadow: 0 0 10px rgb(5, 75, 3);
+}
+.homebutton:hover {
+    background-color: #447a20;
+}
 
 footer {
     width: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     padding: 20px;
     box-sizing: border-box;
     img{
