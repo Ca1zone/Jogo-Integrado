@@ -26,10 +26,47 @@
             </div>
         </nav>
     </section>
-    <main>
-       <section>
-        <h1>Entre em contato</h1>
-        
+    <main class="contatomain">
+       <section class="Formulário">
+        <h1>Formulário Cadastral</h1>
+        <form id="form">
+            <label>Nome:</label>
+            <input type="text" id="Nome">
+            <label>E-mail:</label>
+            <input type="email" id="email">
+            <label>Telefone:</label>
+            <input type="text" id="Telefone">
+            <button type="button" id="botao">Enviar</button>
+        </form>
+        <script>
+            document.getElementById('botao').onclick = function() {
+                var Nome = document.getElementById('nome').value;
+                var email = document.getElementById('email').value;
+                var Telefone = document.getElementById('Telefone').value;
+
+                if (nome == "" & email == "" & Telefone == "") {
+                    alert("Por favor, preencha todos os campos.")
+                }else{
+                    if(Nome == "") {
+                        alert("informe o nome");
+                    }
+
+                    if (email == "") {
+                        alert("inform o email");
+                    }
+
+                    if (Telefone == "") {
+                        alert("inform o telefone");
+                    }
+                }
+
+                if(Nome != "" && email != "" && Telefone != "" ) {
+                    alert("Formulário enviado com sucesso!");
+                }
+            }
+        </script>
+
+
        </section>
     </main>
     <div class="clearfix"></div>
