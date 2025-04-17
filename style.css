@@ -85,6 +85,9 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+.realjogo {
+    overflow-y: hidden;
+}
 
 form {
     display: flex;
